@@ -39,6 +39,7 @@ public class ShapeCollectorTestSuite {
         ShapeCollector shapeCollector = new ShapeCollector();
         Square square = new Square();
         //When
+        shapeCollector.addFigure(square);
         boolean result = shapeCollector.removeFigure(square);
         //Then
         Assert.assertFalse(result);
