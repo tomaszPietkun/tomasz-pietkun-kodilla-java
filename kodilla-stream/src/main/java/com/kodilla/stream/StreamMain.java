@@ -1,22 +1,12 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemBeautifier;
-import com.kodilla.stream.iterate.NumbersGenerator;
-import com.kodilla.stream.lambda.*;
-import com.kodilla.stream.reference.FunctionalCalculator;
+import com.kodilla.stream.person.People;
 
 public class StreamMain {
     public static void main(String[] args) {
-
-        PoemBeautifier poemBeautifier = new PoemBeautifier();
-
-        poemBeautifier.beautify("Secrets Under Trees", (a) -> "ABC " + a + " ABC");
-        poemBeautifier.beautify("Tiny little secrets", (a) -> "!! " + a + " !!");
-        poemBeautifier.beautify("And If They Were DUG UP," , String::toLowerCase);
-        poemBeautifier.beautify("Someone would probably get hurt", String::toUpperCase);
-
-        System.out.println("Using Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generate(20);
+        People.getList().stream()
+                .filter(s -> s.length() > 11)
+                .forEach(System.out::println);
 
     }
 }
