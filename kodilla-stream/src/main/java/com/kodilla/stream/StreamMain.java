@@ -1,6 +1,7 @@
 package com.kodilla.stream;
 
 import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.iterate.NumbersGenerator;
 import com.kodilla.stream.lambda.*;
 import com.kodilla.stream.reference.FunctionalCalculator;
 
@@ -13,6 +14,9 @@ public class StreamMain {
         poemBeautifier.beautify("Tiny little secrets", (a) -> "!! " + a + " !!");
         poemBeautifier.beautify("And If They Were DUG UP," , String::toLowerCase);
         poemBeautifier.beautify("Someone would probably get hurt", String::toUpperCase);
+
+        System.out.println("Using Stream to generate even numbers from 1 to 20");
+        NumbersGenerator.generate(20);
 
     }
 }
