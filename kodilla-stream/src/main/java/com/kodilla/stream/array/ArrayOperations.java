@@ -7,11 +7,14 @@ import java.util.*;
 public interface ArrayOperations {
 
     public static OptionalDouble getAverage(int[] numbers){
-        IntStream stream = IntStream.range(0, numbers.length);
-        stream.toArray();
-        System.out.println(Arrays.toString(numbers));
+        IntStream.range(0,numbers.length)
+                .map(x -> numbers[x])
+                .forEach(System.out :: println);
 
-        return Arrays.stream(numbers).average();
+
+        return IntStream.range(0, numbers.length)
+                .map(x -> numbers[x])
+                .average();
 
     }
 }
