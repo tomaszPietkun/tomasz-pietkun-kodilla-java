@@ -165,8 +165,8 @@ public class BoardTestSuite {
 
         //Then
         Assert.assertEquals(3, tasks);
-        Assert.assertEquals(6, days);
-        Assert.assertEquals(2.0, average, 1);
+        Assert.assertEquals(55, days);
+        Assert.assertEquals(18.0, average, 1);
 
     }
 }
