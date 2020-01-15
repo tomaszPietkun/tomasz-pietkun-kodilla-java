@@ -30,8 +30,8 @@ public class ForumPost {
 
     @Override
     public int hashCode() {
-            int result = postBody.hashCode();
-            result = 31 * result + author.hashCode();
-            return result;
+        int result = postBody.hashCode();
+        result = 31 * result + author.hashCode();
+        return result;
     }
 }

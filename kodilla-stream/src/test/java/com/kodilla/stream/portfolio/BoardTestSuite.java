@@ -2,6 +2,7 @@ package com.kodilla.stream.portfolio;
 
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
@@ -161,7 +162,7 @@ public class BoardTestSuite {
                 .sum();
 
 
-        double average = days/tasks;
+        double average = days / tasks;
 
         //Then
         Assert.assertEquals(3, tasks);

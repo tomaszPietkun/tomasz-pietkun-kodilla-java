@@ -6,10 +6,10 @@ import java.util.*;
 
 public interface ArrayOperations {
 
-    public static OptionalDouble getAverage(int[] numbers){
-        IntStream.range(0,numbers.length)
+    public static OptionalDouble getAverage(int[] numbers) {
+        IntStream.range(0, numbers.length)
                 .map(x -> numbers[x])
-                .forEach(System.out :: println);
+                .forEach(System.out::println);
 
 
         return IntStream.range(0, numbers.length)

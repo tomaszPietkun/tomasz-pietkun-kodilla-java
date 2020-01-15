@@ -7,21 +7,25 @@ import java.util.Arrays;
 
 public class CollectionTestSuite {
     @Before
-    public void before(){
+    public void before() {
         System.out.println("Test Case: start");
     }
+
     @After
-    public void after(){
+    public void after() {
         System.out.println("Test Case: finish");
     }
+
     @BeforeClass
-    public static void beforeClass(){
+    public static void beforeClass() {
         System.out.println("Test Suite: start");
     }
+
     @AfterClass
-    public static void afterClass(){
+    public static void afterClass() {
         System.out.println("Test Suite: finish");
     }
+
     @Test
     public void testOddNumbersExterminatorCaseEmptyList() {
         //Given
@@ -34,8 +38,9 @@ public class CollectionTestSuite {
         //Then
         Assert.assertEquals(0, result);
     }
+
     @Test
-    public void testOddNumbersExterminatorCaseFilledList(){
+    public void testOddNumbersExterminatorCaseFilledList() {
         //Given
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         ArrayList<Integer> numbers = new ArrayList<Integer>();

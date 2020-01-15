@@ -42,6 +42,5 @@ public class WorldTestSuite {
         Assert.assertEquals(expected, totalPeople);
 
 
-
     }
 }

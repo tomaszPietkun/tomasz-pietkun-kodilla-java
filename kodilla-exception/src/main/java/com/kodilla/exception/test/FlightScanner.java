@@ -12,9 +12,9 @@ public class FlightScanner {
         flightMap.put("JFK", true);
         flightMap.put("Newark", true);
 
-        for (String key: flightMap.keySet()) {
+        for (String key : flightMap.keySet()) {
 
-            if(key.equals(flight.getArrivalAirport())) {
+            if (key.equals(flight.getArrivalAirport())) {
                 System.out.println("Searching for flights from: " + flight.getArrivalAirport() + "to: " + flight.getDepartureAirport() + "...");
                 System.out.println("Flight found!");
             }

@@ -1,4 +1,5 @@
 package com.kodilla.testing.shape;
+
 import org.junit.*;
 
 
@@ -30,7 +31,7 @@ public class ShapeCollectorTestSuite {
         //When
         shapeCollector.addFigure(square);
         //Then
-        Assert.assertEquals(1,shapeCollector.getShapesQuantity());
+        Assert.assertEquals(1, shapeCollector.getShapesQuantity());
     }
 
     @Test
@@ -41,7 +42,7 @@ public class ShapeCollectorTestSuite {
         //When
         boolean result = shapeCollector.removeFigure(square);
         //Then
-        Assert.assertEquals(false,result);
+        Assert.assertEquals(false, result);
     }
 
     @Test
